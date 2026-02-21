@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0D9488;
+  --color-primary-dark: #0F766E;
+  --color-primary-light: #14B8A6;
+  --color-accent: #F59E0B;
+  --color-accent-dark: #D97706;
+  --color-surface: #F8FAFC;
+  --color-charcoal: #0F172A;
+  --color-slate-text: #1E293B;
+  --color-muted: #64748B;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-slate-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Before/After Slider */
+.before-after-slider {
+  position: relative;
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.before-after-slider .before-side,
+.before-after-slider .after-side {
+  position: absolute;
+  inset: 0;
+}
+
+.before-after-slider .before-side {
+  z-index: 2;
+}
+
+.before-after-slider .after-side {
+  z-index: 1;
+}
+
+.before-after-slider .slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: white;
+  z-index: 3;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.before-after-slider .slider-handle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.before-after-slider .slider-handle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  background: transparent;
+  border-left: 3px solid var(--color-charcoal);
+  border-right: 3px solid var(--color-charcoal);
+}
+
+/* Gradient mesh background */
+.gradient-mesh {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(13, 148, 136, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(245, 158, 11, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(13, 148, 136, 0.05) 0%, transparent 50%);
+}
+
+/* Style card textures */
+.texture-modern {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 50%, #d4d4d4 100%);
+}
+.texture-scandinavian {
+  background: linear-gradient(135deg, #faf5ef 0%, #e8ddd0 50%, #d4c5b0 100%);
+}
+.texture-industrial {
+  background: linear-gradient(135deg, #374151 0%, #4b5563 50%, #6b7280 100%);
+}
+.texture-bohemian {
+  background: linear-gradient(135deg, #c2410c 0%, #d97706 50%, #ca8a04 100%);
+}
+.texture-midcentury {
+  background: linear-gradient(135deg, #b45309 0%, #d97706 30%, #fbbf24 100%);
+}
+.texture-japandi {
+  background: linear-gradient(135deg, #f5f0eb 0%, #d4c5b0 50%, #a8977d 100%);
+}
+.texture-coastal {
+  background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 50%, #7dd3fc 100%);
+}
+.texture-artdeco {
+  background: linear-gradient(135deg, #1c1917 0%, #292524 50%, #44403c 100%);
+}
+
+/* Room placeholder gradients */
+.room-before-1 {
+  background: linear-gradient(160deg, #a8977d 0%, #d4c5b0 40%, #8b7355 100%);
+}
+.room-after-1 {
+  background: linear-gradient(160deg, #f8fafc 0%, #e2e8f0 40%, #cbd5e1 100%);
+}
+.room-before-2 {
+  background: linear-gradient(160deg, #78716c 0%, #a8a29e 40%, #d6d3d1 100%);
+}
+.room-after-2 {
+  background: linear-gradient(160deg, #faf5ef 0%, #e8ddd0 40%, #d4c5b0 100%);
+}
+.room-before-3 {
+  background: linear-gradient(160deg, #9ca3af 0%, #d1d5db 40%, #6b7280 100%);
+}
+.room-after-3 {
+  background: linear-gradient(160deg, #c2410c 0%, #ea580c 40%, #f59e0b 100%);
+}
+.room-before-4 {
+  background: linear-gradient(160deg, #d6d3d1 0%, #a8a29e 40%, #78716c 100%);
+}
+.room-after-4 {
+  background: linear-gradient(160deg, #0d9488 0%, #14b8a6 40%, #5eead4 100%);
+}
+.room-before-5 {
+  background: linear-gradient(160deg, #e5e7eb 0%, #d1d5db 40%, #9ca3af 100%);
+}
+.room-after-5 {
+  background: linear-gradient(160deg, #374151 0%, #4b5563 40%, #9ca3af 100%);
+}
+.room-before-6 {
+  background: linear-gradient(160deg, #fafaf9 0%, #e7e5e4 40%, #d6d3d1 100%);
+}
+.room-after-6 {
+  background: linear-gradient(160deg, #b45309 0%, #d97706 40%, #fbbf24 100%);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Scrollbar styling */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
