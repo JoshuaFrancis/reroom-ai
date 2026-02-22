@@ -57,11 +57,6 @@ export default function BeforeAfterSlider({
     >
       {/* After side (full width behind) */}
       <div className={`absolute inset-0 ${afterClass}`}>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white/80 font-semibold text-lg tracking-wide drop-shadow-lg">
-            {afterLabel}
-          </span>
-        </div>
         <span className="absolute bottom-3 right-3 bg-white/90 text-charcoal text-xs font-semibold px-3 py-1 rounded-full">
           After
         </span>
@@ -72,11 +67,6 @@ export default function BeforeAfterSlider({
         className={`absolute inset-0 ${beforeClass}`}
         style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
       >
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white/80 font-semibold text-lg tracking-wide drop-shadow-lg">
-            {beforeLabel}
-          </span>
-        </div>
         <span className="absolute bottom-3 left-3 bg-white/90 text-charcoal text-xs font-semibold px-3 py-1 rounded-full">
           Before
         </span>

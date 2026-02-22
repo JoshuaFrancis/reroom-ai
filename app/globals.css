@@ -120,10 +120,14 @@ body {
 
 /* Room placeholder gradients */
 .room-before-1 {
-  background: linear-gradient(160deg, #a8977d 0%, #d4c5b0 40%, #8b7355 100%);
+  background-image: url('/images/room-before-1.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .room-after-1 {
-  background: linear-gradient(160deg, #f8fafc 0%, #e2e8f0 40%, #cbd5e1 100%);
+  background-image: url('/images/room-after-1.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .room-before-2 {
   background: linear-gradient(160deg, #78716c 0%, #a8a29e 40%, #d6d3d1 100%);
