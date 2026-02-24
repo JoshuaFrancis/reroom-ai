@@ -53,7 +53,7 @@ export default function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="mt-4 text-lg text-muted max-w-2xl mx-auto">
-            Start with a 7-day free trial on any plan. No credit card required.
+            Pick the plan that works for you. Cancel anytime.
           </p>
         </div>
 

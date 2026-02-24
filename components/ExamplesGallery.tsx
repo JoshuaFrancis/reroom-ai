@@ -66,10 +66,6 @@ export default function ExamplesGallery() {
           ))}
         </div>
 
-        <p className="text-center text-sm text-muted mt-8">
-          These are placeholder visuals. Replace with real AI-generated
-          before/after images for your product.
-        </p>
       </div>
     </section>
   );

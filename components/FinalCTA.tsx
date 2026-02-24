@@ -11,14 +11,14 @@ export default function FinalCTA() {
         </h2>
         <p className="mt-6 text-lg text-gray-400 max-w-xl mx-auto">
           Join thousands of homeowners and designers transforming rooms with AI.
-          Start your 7-day free trial today.
+          Start redesigning today.
         </p>
         <div className="mt-10">
           <a
             href="#pricing"
             className="inline-block bg-primary text-white font-semibold text-lg px-10 py-4 rounded-xl hover:bg-primary-dark transition-colors shadow-lg shadow-primary/30"
           >
-            Start Your Free Trial
+            Get Started
           </a>
         </div>
       </div>
