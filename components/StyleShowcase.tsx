@@ -1,84 +1,90 @@
 "use client";
 
-const styles = [
+import { useState } from "react";
+
+const faqs = [
   {
-    name: "Modern Minimalist",
-    desc: "Clean lines, neutral palette, open space",
-    texture: "texture-modern",
-    textColor: "text-gray-700",
+    q: "How realistic are the results?",
+    a: "ReRoom uses state-of-the-art AI trained on millions of interior design images. Results are photorealistic and respect your room's actual dimensions, lighting, and structure — not a rough concept sketch.",
   },
   {
-    name: "Scandinavian",
-    desc: "Light wood, cozy textiles, functional beauty",
-    texture: "texture-scandinavian",
-    textColor: "text-gray-700",
+    q: "What types of rooms does it work with?",
+    a: "Any indoor space: living rooms, bedrooms, kitchens, bathrooms, home offices, dining rooms, and more. If you can photograph it, we can redesign it.",
   },
   {
-    name: "Industrial",
-    desc: "Exposed brick, metal accents, raw character",
-    texture: "texture-industrial",
-    textColor: "text-white",
+    q: "Do I need any design experience?",
+    a: "None at all. Just describe what you want in plain language — \"bright Scandinavian with warm wood\" — and the AI handles everything else.",
   },
   {
-    name: "Bohemian",
-    desc: "Rich colors, layered textures, eclectic charm",
-    texture: "texture-bohemian",
-    textColor: "text-white",
+    q: "How long does a redesign take?",
+    a: "Under 30 seconds from upload to result. You can generate multiple variations and compare them side by side instantly.",
   },
   {
-    name: "Mid-Century Modern",
-    desc: "Retro warmth, organic curves, bold accents",
-    texture: "texture-midcentury",
-    textColor: "text-white",
+    q: "Will it change my room's layout or structure?",
+    a: "No. The AI keeps your room's walls, windows, doors, and dimensions exactly as they are. It only changes the furnishings, colors, textures, and décor.",
   },
   {
-    name: "Japandi",
-    desc: "Japanese simplicity meets Scandinavian warmth",
-    texture: "texture-japandi",
-    textColor: "text-gray-700",
+    q: "Can I use the results for commercial projects?",
+    a: "Yes. Pro and Studio plan subscribers get full commercial usage rights for client presentations, listings, and publications.",
   },
   {
-    name: "Coastal",
-    desc: "Ocean blues, natural textures, breezy vibes",
-    texture: "texture-coastal",
-    textColor: "text-white",
-  },
-  {
-    name: "Art Deco",
-    desc: "Geometric patterns, rich materials, glamour",
-    texture: "texture-artdeco",
-    textColor: "text-white",
+    q: "Is there a free trial?",
+    a: "Yes — you get 3 free redesigns when you sign up, no credit card required. Upgrade anytime to unlock unlimited generations.",
   },
 ];
 
-export default function StyleShowcase() {
+export default function FAQ() {
+  const [open, setOpen] = useState<number | null>(null);
+
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold text-charcoal">
-            20+ Design Styles
+            Frequently Asked Questions
           </h2>
-          <p className="mt-4 text-lg text-muted max-w-2xl mx-auto">
-            From minimalist to maximalist. Pick a style or describe your own —
-            the AI handles the rest.
+          <p className="mt-4 text-lg text-muted max-w-xl mx-auto">
+            Everything you need to know before your first redesign.
           </p>
         </div>
 
-        <div className="flex gap-5 overflow-x-auto pb-4 hide-scrollbar snap-x snap-mandatory">
-          {styles.map((style) => (
-            <div
-              key={style.name}
-              className={`flex-shrink-0 w-56 h-72 rounded-2xl ${style.texture} p-6 flex flex-col justify-end snap-start transition-transform hover:scale-105`}
-            >
-              <h3 className={`text-lg font-bold ${style.textColor}`}>
-                {style.name}
-              </h3>
-              <p
-                className={`text-sm mt-1 ${style.textColor} opacity-80 leading-snug`}
+        <div className="divide-y divide-gray-100">
+          {faqs.map((faq, i) => (
+            <div key={i}>
+              <button
+                onClick={() => setOpen(open === i ? null : i)}
+                className="w-full text-left py-5 flex items-center justify-between gap-4 group"
               >
-                {style.desc}
-              </p>
+                <span className="text-base font-semibold text-charcoal group-hover:text-primary transition-colors">
+                  {faq.q}
+                </span>
+                <span
+                  className={`flex-shrink-0 w-6 h-6 rounded-full border-2 border-gray-200 flex items-center justify-center transition-all ${
+                    open === i
+                      ? "border-primary bg-primary text-white rotate-45"
+                      : "text-gray-400"
+                  }`}
+                >
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 2V8M2 5H8"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+              {open === i && (
+                <p className="pb-5 text-muted leading-relaxed text-sm pr-10">
+                  {faq.a}
+                </p>
+              )}
             </div>
           ))}
         </div>

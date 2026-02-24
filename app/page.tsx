@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import HowItWorks from "@/components/HowItWorks";
 import ExamplesGallery from "@/components/ExamplesGallery";
-import StyleShowcase from "@/components/StyleShowcase";
 import UseCases from "@/components/UseCases";
 import Features from "@/components/Features";
 import Pricing from "@/components/Pricing";
@@ -19,7 +18,6 @@ export default function Home() {
       <TrustBar />
       <HowItWorks />
       <ExamplesGallery />
-      <StyleShowcase />
       <UseCases />
       <Features />
       <Pricing />

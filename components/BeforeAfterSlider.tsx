@@ -33,6 +33,7 @@ export default function BeforeAfterSlider({
   );
 
   const handlePointerDown = (e: React.PointerEvent) => {
+    e.preventDefault();
     setDragging(true);
     (e.target as HTMLElement).setPointerCapture(e.pointerId);
     updatePosition(e.clientX);
@@ -50,7 +51,7 @@ export default function BeforeAfterSlider({
   return (
     <div
       ref={containerRef}
-      className={`before-after-slider relative rounded-2xl overflow-hidden ${height} w-full`}
+      className={`before-after-slider relative rounded-2xl overflow-hidden ${height} w-full touch-none select-none`}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
