@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — ReRoom",
-  description: "Terms and conditions governing your use of the ReRoom platform.",
+  title: "Terms of Service — RoomLab",
+  description: "Terms and conditions governing your use of the RoomLab platform.",
 };
 
 export default function TermsOfService() {
@@ -33,7 +33,7 @@ export default function TermsOfService() {
         <div className="prose-custom">
           <Section title="1. Acceptance of Terms">
             <p>
-              By creating an account or using the ReRoom platform
+              By creating an account or using the RoomLab platform
               (&ldquo;Service&rdquo;), you agree to be bound by these Terms of
               Service (&ldquo;Terms&rdquo;). If you do not agree, do not use
               the Service.
@@ -48,14 +48,14 @@ export default function TermsOfService() {
 
           <Section title="2. Description of Service">
             <p>
-              ReRoom is an AI-powered room redesign platform that allows users
+              RoomLab is an AI-powered room redesign platform that allows users
               to upload photographs of interior spaces and receive
               AI-generated redesign suggestions based on text prompts. The
               Service is available on a subscription basis as described in
               Section 4.
             </p>
             <p>
-              ReRoom is a tool to assist with creative visualisation. Outputs
+              RoomLab is a tool to assist with creative visualisation. Outputs
               are AI-generated and should not be relied upon as professional
               architectural, structural, or interior design advice.
             </p>
@@ -77,10 +77,10 @@ export default function TermsOfService() {
               <li>
                 You must notify us immediately at{" "}
                 <a
-                  href="mailto:support@reroom.ai"
+                  href="mailto:support@roomlab.ca"
                   className="text-primary hover:underline"
                 >
-                  support@reroom.ai
+                  support@roomlab.ca
                 </a>{" "}
                 if you suspect unauthorised access to your account.
               </li>
@@ -94,7 +94,7 @@ export default function TermsOfService() {
           <Section title="4. Subscriptions and Payment">
             <Subsection title="4.1 Plans">
               <p>
-                ReRoom offers the following monthly subscription plans:
+                RoomLab offers the following monthly subscription plans:
               </p>
               <div className="bg-surface rounded-xl p-5 my-4 space-y-3 text-sm">
                 <div className="flex justify-between items-start border-b border-gray-200 pb-3">
@@ -158,10 +158,10 @@ export default function TermsOfService() {
                 If you believe you were charged in error, contact us within 14
                 days at{" "}
                 <a
-                  href="mailto:billing@reroom.ai"
+                  href="mailto:billing@roomlab.ca"
                   className="text-primary hover:underline"
                 >
-                  billing@reroom.ai
+                  billing@roomlab.ca
                 </a>
                 .
               </p>
@@ -209,7 +209,7 @@ export default function TermsOfService() {
             <Subsection title="6.1 Your Uploaded Images">
               <p>
                 You retain ownership of images you upload. By uploading, you
-                grant ReRoom a limited, non-exclusive licence to process your
+                grant RoomLab a limited, non-exclusive licence to process your
                 images solely to provide the Service. We do not claim ownership
                 of your uploaded content.
               </p>
@@ -238,9 +238,9 @@ export default function TermsOfService() {
 
           <Section title="7. Intellectual Property">
             <p>
-              The ReRoom name, logo, platform, and all underlying technology,
+              The RoomLab name, logo, platform, and all underlying technology,
               software, and content (excluding your uploads) are the
-              intellectual property of ReRoom and are protected by applicable
+              intellectual property of RoomLab and are protected by applicable
               copyright, trademark, and other laws. You may not copy, modify,
               distribute, or create derivative works from our platform without
               our express written consent.
@@ -280,7 +280,7 @@ export default function TermsOfService() {
 
           <Section title="10. Indemnification">
             <p>
-              You agree to indemnify and hold harmless ReRoom, its officers,
+              You agree to indemnify and hold harmless RoomLab, its officers,
               directors, employees, and agents from any claims, damages,
               losses, or expenses (including legal fees) arising from your use
               of the Service, your violation of these Terms, or your
@@ -310,14 +310,14 @@ export default function TermsOfService() {
               Questions about these Terms? Contact us at:
             </p>
             <div className="bg-surface rounded-xl p-5 mt-4 text-sm text-muted space-y-1">
-              <p className="font-semibold text-charcoal">ReRoom</p>
+              <p className="font-semibold text-charcoal">RoomLab</p>
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:legal@reroom.ai"
+                  href="mailto:legal@roomlab.ca"
                   className="text-primary hover:underline"
                 >
-                  legal@reroom.ai
+                  legal@roomlab.ca
                 </a>
               </p>
             </div>
@@ -333,7 +333,7 @@ export default function TermsOfService() {
 
         <div className="mt-16 pt-8 border-t border-gray-100 flex gap-6 text-sm text-muted">
           <Link href="/" className="hover:text-charcoal transition-colors">
-            ← Back to ReRoom
+            ← Back to RoomLab
           </Link>
           <Link
             href="/privacy"

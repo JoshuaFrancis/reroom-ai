@@ -6,8 +6,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <a href="#" className="text-2xl font-extrabold">
-              <span className="text-primary">Re</span>
-              <span className="text-white">Room</span>
+              <span className="text-primary">Room</span>
+              <span className="text-white">Lab</span>
             </a>
             <p className="mt-3 text-gray-500 text-sm leading-relaxed">
               AI-powered room redesign for homeowners, designers, and real estate
@@ -133,7 +133,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/10 text-center">
           <p className="text-gray-600 text-sm">
-            &copy; {new Date().getFullYear()} ReRoom. All rights reserved.
+            &copy; {new Date().getFullYear()} RoomLab. All rights reserved.
           </p>
         </div>
       </div>

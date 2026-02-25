@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — ReRoom",
-  description: "How ReRoom collects, uses, and protects your personal information.",
+  title: "Privacy Policy — RoomLab",
+  description: "How RoomLab collects, uses, and protects your personal information.",
 };
 
 export default function PrivacyPolicy() {
@@ -33,14 +33,14 @@ export default function PrivacyPolicy() {
         <div className="prose-custom">
           <Section title="1. Introduction">
             <p>
-              ReRoom (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
-              operates the ReRoom platform, an AI-powered room redesign service
-              accessible at reroom.ai (the &ldquo;Service&rdquo;). This Privacy
+              RoomLab (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
+              operates the RoomLab platform, an AI-powered room redesign service
+              accessible at roomlab.ca (the &ldquo;Service&rdquo;). This Privacy
               Policy explains how we collect, use, disclose, and protect your
               personal information when you use our Service.
             </p>
             <p>
-              By using ReRoom, you agree to the collection and use of
+              By using RoomLab, you agree to the collection and use of
               information in accordance with this policy. If you disagree with
               any part, please discontinue use of the Service.
             </p>
@@ -92,7 +92,7 @@ export default function PrivacyPolicy() {
           <Section title="3. How We Use Your Information">
             <p>We use the information we collect to:</p>
             <ul>
-              <li>Provide, operate, and improve the ReRoom Service</li>
+              <li>Provide, operate, and improve the RoomLab Service</li>
               <li>Process payments and manage your subscription</li>
               <li>
                 Generate AI-powered room redesigns from your uploaded images
@@ -218,10 +218,10 @@ export default function PrivacyPolicy() {
             <p>
               To exercise these rights, contact us at{" "}
               <a
-                href="mailto:privacy@reroom.ai"
+                href="mailto:privacy@roomlab.ca"
                 className="text-primary hover:underline"
               >
-                privacy@reroom.ai
+                privacy@roomlab.ca
               </a>
               . We will respond within 30 days.
             </p>
@@ -259,14 +259,14 @@ export default function PrivacyPolicy() {
               contact us at:
             </p>
             <div className="bg-surface rounded-xl p-5 mt-4 text-sm text-muted space-y-1">
-              <p className="font-semibold text-charcoal">ReRoom</p>
+              <p className="font-semibold text-charcoal">RoomLab</p>
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:privacy@reroom.ai"
+                  href="mailto:privacy@roomlab.ca"
                   className="text-primary hover:underline"
                 >
-                  privacy@reroom.ai
+                  privacy@roomlab.ca
                 </a>
               </p>
             </div>
@@ -275,7 +275,7 @@ export default function PrivacyPolicy() {
 
         <div className="mt-16 pt-8 border-t border-gray-100 flex gap-6 text-sm text-muted">
           <Link href="/" className="hover:text-charcoal transition-colors">
-            ← Back to ReRoom
+            ← Back to RoomLab
           </Link>
           <Link href="/terms" className="hover:text-charcoal transition-colors">
             Terms of Service →

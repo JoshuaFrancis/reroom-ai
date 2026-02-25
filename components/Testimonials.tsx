@@ -1,7 +1,7 @@
 const testimonials = [
   {
     quote:
-      "We were about to spend $40K on a kitchen remodel. ReRoom let us try five different designs before committing. Saved us from a huge mistake on our first idea.",
+      "We were about to spend $40K on a kitchen remodel. RoomLab let us try five different designs before committing. Saved us from a huge mistake on our first idea.",
     name: "Sarah M.",
     role: "Homeowner",
     initials: "SM",
@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     quote:
-      "Virtual staging used to cost us $300 per room. ReRoom does it for a fraction of the price and the results are just as good. Game changer for our listings.",
+      "Virtual staging used to cost us $300 per room. RoomLab does it for a fraction of the price and the results are just as good. Game changer for our listings.",
     name: "Rachel T.",
     role: "Real Estate Agent",
     initials: "RT",

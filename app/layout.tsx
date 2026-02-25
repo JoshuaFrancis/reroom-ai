@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ReRoom — Redesign Any Room in Seconds",
+  title: "RoomLab — Redesign Any Room in Seconds",
   description:
     "Upload a photo of any space, describe your vision, and watch AI transform it instantly. Used by homeowners, interior designers, and real estate agents.",
 };

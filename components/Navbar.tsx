@@ -23,8 +23,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="text-2xl font-extrabold tracking-tight">
-          <span className="text-primary">Re</span>
-          <span className="text-charcoal">Room</span>
+          <span className="text-primary">Room</span>
+          <span className="text-charcoal">Lab</span>
         </a>
 
         {/* Desktop links */}
