@@ -15,7 +15,7 @@ export default function FinalCTA() {
         </p>
         <div className="mt-10">
           <a
-            href="#pricing"
+            href="https://app.roomlab.ca"
             className="inline-block bg-primary text-white font-semibold text-lg px-10 py-4 rounded-xl hover:bg-primary-dark transition-colors shadow-lg shadow-primary/30"
           >
             Get Started

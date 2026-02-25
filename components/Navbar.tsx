@@ -48,7 +48,7 @@ export default function Navbar() {
             Pricing
           </a>
           <a
-            href="#"
+            href="https://app.roomlab.ca"
             className="bg-charcoal text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-charcoal/90 transition-colors"
           >
             Get Started
@@ -104,7 +104,7 @@ export default function Navbar() {
             Pricing
           </a>
           <a
-            href="#"
+            href="https://app.roomlab.ca"
             className="bg-charcoal text-white text-sm font-semibold px-5 py-2.5 rounded-lg text-center"
           >
             Get Started

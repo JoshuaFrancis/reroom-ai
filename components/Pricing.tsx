@@ -135,7 +135,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="#"
+                href="https://app.roomlab.ca"
                 className={`block text-center font-semibold py-3 rounded-xl transition-colors ${
                   plan.highlighted
                     ? "bg-primary text-white hover:bg-primary-dark"
