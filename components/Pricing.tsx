@@ -11,7 +11,7 @@ const plans = [
     highlighted: false,
   },
   {
-    name: "Pro",
+    name: "Studio",
     price: 49,
     desc: "For homeowners and professionals",
     features: [
@@ -24,7 +24,7 @@ const plans = [
     badge: "Most Popular",
   },
   {
-    name: "Business",
+    name: "Agency",
     price: 99,
     desc: "For teams and agencies",
     features: [
